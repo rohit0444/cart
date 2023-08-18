@@ -13,9 +13,9 @@ function App() {
         <Router basename={window.location.pathname || ''}>
           <Navbar />
           <Routes>
-            <Route path="/cart" exact element={<Shop />} />
+            <Route path="/" exact element={<Shop />} />
            
-            <Route path="/cart/cart" exact element={<Cart />} />
+            <Route path="/cart" exact element={<Cart />} />
           </Routes>
         </Router>
         </ShopContext>
