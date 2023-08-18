@@ -10,14 +10,14 @@ function App() {
   return (
     <div className="App">
        <ShopContext>
-        <Router basename={window.location.pathname || ''}>
+       
           <Navbar />
           <Routes>
             <Route exact path="/" element={<Shop />} />
            
             <Route exact path="/cart" element={<Cart />} />
           </Routes>
-        </Router>
+       
         </ShopContext>
       
     </div>
