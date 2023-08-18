@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
        <ShopContext>
-        <Router basename={window.location.pathname || ''}>
+        <Router basename={window.location.pathname }>
           <Navbar />
           <Routes>
             <Route path="/" element={<Shop />} />
