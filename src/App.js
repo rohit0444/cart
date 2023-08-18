@@ -10,12 +10,12 @@ function App() {
   return (
     <div className="App">
        <ShopContext>
-        <Router basename={'/http://rohit0444.github.io/cart'}>
+        <Router basename={window.location.pathname || ''}>
           <Navbar />
           <Routes>
-            <Route path="/" element={<Shop />} />
+            <Route exact path="/" element={<Shop />} />
            
-            <Route path="/cart" element={<Cart />} />
+            <Route exact path="/cart" element={<Cart />} />
           </Routes>
         </Router>
         </ShopContext>
